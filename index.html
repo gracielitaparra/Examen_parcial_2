@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="start-screen">
+      <h1>Bienvenido al Examen</h1>
+      <button id="start-btn">Comenzar</button>
+    </div>
+    <div id="rules-screen" class="hidden">
+      <h2>Instrucciones</h2>
+      <h2>Reglas del Examen</h2>
+      <p>• Tiempo por pregunta: 15 segundos</p>
+      <p>• Una vez respondido, no se puede cambiar la selección</p>
+      <button id="start-exam-btn">Empezar Examen</button>
+    </div>
+    <div id="exam-screen" class="hidden">
+      <div id="timer"></div>
+      <div id="question"></div>
+      <div id="answers"></div>
+      <button id="next-btn" class="hidden">Siguiente</button>
+    </div>
+    <div id="result-screen" class="hidden">
+      <h2>Resultados</h2>
+      <p id="score"></p>
+      <button id="retry-btn">Reintentar</button>
+      <button id="exit-btn">Salir</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
